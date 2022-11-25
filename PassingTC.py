@@ -6,7 +6,7 @@ from Palindrom import isPalindrome
 class Tests(unittest.TestCase): 
   
   def testcasepassing1(self):
-    string = "rececar"
+    string = "racecar"
     trueResult = True
     testResult = isPalindrome(string)
     self.assertEqual(testResult, trueResult)
