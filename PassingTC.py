@@ -17,9 +17,11 @@ class Tests(unittest.TestCase):
     testResult = isPalindrome(string)
     self.assertEqual(testResult, trueResult)
     
-  def testpassing3(self):
+  def testcasepassing3(self):
     string = "a12421a"
     trueResult = True
     testResult = isPalindrome(string)
     self.assertEqual(testResult, trueResult)
     
+if __name__ == '__main__':
+    unittest.main()
