@@ -1,0 +1,28 @@
+pipeline { 
+    agent any
+    stages {
+        stage('Clone Git') {
+            steps {
+                git 'https://github.com/Likhith-2914/jenkins-assignment.git'
+            }
+        }
+        stage('Build Code') {
+            steps {
+                sh "chmod u+x Palindrome.py"
+                sh "./Palindrome.py"
+            }
+        }
+     stage('Passing Test Code') {
+            steps {
+                sh "chmod u+x PassingTC.py"
+                sh "./PassingTC.py"
+            }
+        }
+        stage('Failing Test Code') {
+            steps {
+                sh "chmod u+x FailingTC.py"
+                sh "./FailingTC.py"
+            }
+        }
+    } 
+}
