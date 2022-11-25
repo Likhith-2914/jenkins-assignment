@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import unittest
 
-from Palindrom import isPalindrome
+from Palindrome import isPalindrome
 
 class Tests(unittest.TestCase): 
   
