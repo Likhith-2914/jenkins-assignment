@@ -22,3 +22,6 @@ class Tests(unittest.TestCase):
     trueResult = False
     testResult = isPalindrome(string)
     self.assertEqual(testResult, trueResult)
+
+if __name__ == '__main__':
+    unittest.main()
